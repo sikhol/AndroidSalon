@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="475dp"
+    android:layout_gravity="center"
+    android:background="@color/colorWhite"
+    tools:context=".view.PopUpActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:fontFamily="serif"
+        app:title="Pembayaran"
+        app:titleTextColor="@color/colorWhite">
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/colorWhite"
+        android:layout_below="@id/toolbar"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/layout_total_biaya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/txt_total_biaya"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="60"
+                android:fontFamily="serif"
+                android:text="Total Biaya"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_total_biaya"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:background="@drawable/round"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="180.000"
+                android:textColor="@color/colorBlack"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_total_biaya"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/grey_bottom_line" />
+
+        <LinearLayout
+            android:id="@+id/layout_bayar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line2"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/txt_bayar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="60"
+                android:fontFamily="serif"
+                android:text="Bayar"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_bayar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:background="@drawable/round"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:hint="180.000"
+                android:textColor="@color/colorAbuAbu"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_kembalian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_bayar"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/txt_kembalian"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="60"
+                android:fontFamily="serif"
+                android:text="Kembali"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_kembalian"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:background="@drawable/round"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="0"
+                android:textColor="@color/colorBlack"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_login"
+            android:fontFamily="serif"
+            android:text="Simpan"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

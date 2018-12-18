@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".viewFragment.DashboardFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_kasir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="KASIR"
+            android:textSize="28dp" />
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/grey_bottom_line"
+            app:layout_constraintTop_toBottomOf="@id/txt_kasir" />
+
+        <RelativeLayout
+            android:id="@+id/relative_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/line">
+
+            <TextView
+                android:id="@+id/txt_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today"
+                android:fontFamily="serif"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="18 Oktober 2018"
+                android:fontFamily="serif"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_income"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/relative_date">
+
+            <TextView
+                android:id="@+id/txt_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Income"
+                android:fontFamily="serif"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="130.000"
+                android:fontFamily="serif"
+                android:textSize="18dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relative_pelanggan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/relative_income">
+
+            <TextView
+                android:id="@+id/txt_pelanggan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pelanggan"
+                android:fontFamily="serif"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_pelanggan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="5"
+                android:fontFamily="serif"
+                android:textSize="18dp" />
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/grey_bottom_line"
+            app:layout_constraintTop_toBottomOf="@id/relative_pelanggan" />
+        <RelativeLayout
+            android:id="@+id/relative_layanan1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/line2">
+
+            <TextView
+                android:id="@+id/txt_layanan1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SPA"
+                android:fontFamily="serif"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_jumlah_layanan1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="3"
+                android:fontFamily="serif"
+                android:textSize="18dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relative_layanan2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/relative_layanan1">
+
+            <TextView
+                android:id="@+id/txt_layanan2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Potong Rambut"
+                android:fontFamily="serif"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_jumlah_layanan2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="2"
+                android:fontFamily="serif"
+                android:textSize="18dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relative_layanan3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/relative_layanan2">
+
+            <TextView
+                android:id="@+id/txt_layanan3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Creambath"
+                android:fontFamily="serif"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_jumlah_layanan3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="1"
+                android:fontFamily="serif"
+                android:textSize="18dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relative_layanan4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/relative_layanan3">
+
+            <TextView
+                android:id="@+id/txt_layanan4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facial"
+                android:fontFamily="serif"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_jumlah_layanan4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="0"
+                android:fontFamily="serif"
+                android:textSize="18dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relative_layanan5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/relative_layanan4">
+
+            <TextView
+                android:id="@+id/txt_layanan5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perawatan Tubuh"
+                android:fontFamily="serif"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_jumlah_layanan5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="0"
+                android:fontFamily="serif"
+                android:textSize="18dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relative_layanan6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/relative_layanan5">
+
+            <TextView
+                android:id="@+id/txt_layanan6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menicure"
+                android:fontFamily="serif"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_jumlah_layanan6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="0"
+                android:fontFamily="serif"
+                android:textSize="18dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relative_layanan7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/relative_layanan6">
+
+            <TextView
+                android:id="@+id/txt_layanan7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pedicure"
+                android:fontFamily="serif"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_jumlah_layanan7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="0"
+                android:fontFamily="serif"
+                android:textSize="18dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relative_layanan8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/relative_layanan7">
+
+            <TextView
+                android:id="@+id/txt_layanan8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Smothing"
+                android:fontFamily="serif"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_jumlah_layanan8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="0"
+                android:fontFamily="serif"
+                android:textSize="18dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relative_layanan9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/relative_layanan8">
+
+            <TextView
+                android:id="@+id/txt_layanan9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hair Mask"
+                android:fontFamily="serif"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_jumlah_layanan9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="0"
+                android:fontFamily="serif"
+                android:textSize="18dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relative_layanan10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/relative_layanan9">
+
+            <TextView
+                android:id="@+id/txt_layanan10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Make Up Wisuda"
+                android:fontFamily="serif"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_jumlah_layanan10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="0"
+                android:fontFamily="serif"
+                android:textSize="18dp" />
+        </RelativeLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

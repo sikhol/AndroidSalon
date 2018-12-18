@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/pendaftaran"
+        android:title="Pendaftaran"
+        android:icon="@drawable/ic_pendaftaran"/>
+    <item
+        android:id="@+id/antrian"
+        android:title="Antrian"
+        android:icon="@drawable/ic_antrian"/>
+    <item
+        android:id="@+id/pembayaran"
+        android:title="Pembayaran"
+        android:icon="@drawable/ic_bayar"/>
+</menu>

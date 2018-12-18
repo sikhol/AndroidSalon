@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".view.PrintActivity">
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/layout_biaya"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:weightSum="100">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/txt_biaya"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_weight="60"-->
+    <!--android:fontFamily="serif"-->
+    <!--android:text="Biaya"-->
+    <!--android:textSize="20sp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_biaya"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="40"-->
+    <!--android:background="@drawable/round"-->
+    <!--android:fontFamily="serif"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="5dp"-->
+    <!--android:singleLine="true"-->
+    <!--android:text="200.000"-->
+    <!--android:textColor="@color/colorBlack"-->
+    <!--android:textSize="24sp"-->
+    <!--android:textStyle="bold" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/layout_diskon"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_below="@id/layout_biaya"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:weightSum="100">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/txt_diskon"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_weight="60"-->
+    <!--android:fontFamily="serif"-->
+    <!--android:text="Diskon"-->
+    <!--android:textSize="20sp" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/et_diskon"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="40"-->
+    <!--android:background="@drawable/round"-->
+    <!--android:fontFamily="serif"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="5dp"-->
+    <!--android:singleLine="true"-->
+    <!--android:text="10%"-->
+    <!--android:textSize="24sp"-->
+    <!--android:textStyle="bold" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/layout_total_biaya"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_below="@id/layout_diskon"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:weightSum="100">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/txt_total_biaya"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_weight="60"-->
+    <!--android:fontFamily="serif"-->
+    <!--android:text="Total Biaya"-->
+    <!--android:textSize="20sp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_total_biaya"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="40"-->
+    <!--android:background="@drawable/round"-->
+    <!--android:fontFamily="serif"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="5dp"-->
+    <!--android:singleLine="true"-->
+    <!--android:text="180.000"-->
+    <!--android:textColor="@color/colorBlack"-->
+    <!--android:textSize="24sp"-->
+    <!--android:textStyle="bold"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/layout_bayar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:layout_below="@id/layout_total_biaya"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:weightSum="100">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/txt_bayar"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_weight="60"-->
+    <!--android:fontFamily="serif"-->
+    <!--android:text="Bayar"-->
+    <!--android:textSize="20sp" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/et_bayar"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="40"-->
+    <!--android:background="@drawable/round"-->
+    <!--android:fontFamily="serif"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="5dp"-->
+    <!--android:singleLine="true"-->
+    <!--android:text="180.000"-->
+    <!--android:textColor="@color/colorBlack"-->
+    <!--android:textSize="24sp"-->
+    <!--android:textStyle="bold"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/layout_kembalian"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_below="@id/layout_bayar"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:weightSum="100">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/txt_kembalian"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_weight="60"-->
+    <!--android:fontFamily="serif"-->
+    <!--android:text="Kembali"-->
+    <!--android:textSize="20sp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_kembalian"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="40"-->
+    <!--android:background="@drawable/round"-->
+    <!--android:fontFamily="serif"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="5dp"-->
+    <!--android:singleLine="true"-->
+    <!--android:text="0"-->
+    <!--android:textColor="@color/colorBlack"-->
+    <!--android:textSize="24sp"-->
+    <!--android:textStyle="bold"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/msgtextlbl"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Enter Your Message : "/>-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/message"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:layout_below="@+id/msgtextlbl"-->
+    <!--android:text=""/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/label"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Type here:" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/entry"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/label" />-->
+
+    <ImageView
+        android:id="@+id/logo_nota_salon"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:src="@drawable/salon_muslimah"/>
+
+    <TextView
+        android:id="@+id/nama_salon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_nota_salon"
+        android:fontFamily="serif"
+        android:text="Muslimah Salon"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/alamat_salon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nama_salon"
+        android:fontFamily="serif"
+        android:text="Jl. Garuda 78a, Manukan, Condong Catur"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/kota_salon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alamat_salon"
+        android:fontFamily="serif"
+        android:text="Yogyakarta"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/other_salon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kota_salon"
+        android:fontFamily="serif"
+        android:text="Telp. 0274-4983758"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/other_salon"
+        android:layout_marginTop="8dp"
+        app:srcCompat="@drawable/grey_bottom_line" />
+
+    <TableLayout
+        android:id="@+id/table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line">
+
+        <TableRow
+            android:id="@+id/table_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="13dp"
+            android:paddingTop="10dp"
+            android:paddingRight="13dp"
+            android:paddingBottom="10dp"
+            android:weightSum="90">
+
+            <TextView
+                android:id="@+id/txt_layanan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="30"
+                android:fontFamily="serif"
+                android:singleLine="true"
+                android:text="Layanan"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                app:autoSizeTextType="uniform" />
+
+            <TextView
+                android:id="@+id/txt_Qty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="serif"
+                android:singleLine="true"
+                android:text="Qty"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textStyle="bold|italic"
+                app:autoSizeTextType="uniform" />
+
+            <TextView
+                android:id="@+id/txt_biaya"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="serif"
+                android:singleLine="true"
+                android:text="Biaya"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                app:autoSizeTextType="uniform" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table_row2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="90"
+            android:paddingStart="13dp"
+            android:paddingEnd="13dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp">
+
+            <TextView
+                android:id="@+id/tgl_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="serif"
+                android:text="Potong"
+                android:textSize="18sp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/counter1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="serif"
+                android:text="1"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/efisiensi1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="serif"
+                android:text="50.000"
+                android:gravity="end"
+                android:textSize="18sp"
+                android:textColor="#000" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table_row3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="13dp"
+            android:paddingEnd="13dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:weightSum="90">
+
+            <TextView
+                android:id="@+id/tgl_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="serif"
+                android:text="Creambath"
+                android:textSize="18sp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/counter2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="serif"
+                android:text="1"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/efisiensi2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="serif"
+                android:text="50.000"
+                android:gravity="end"
+                android:textSize="18sp"
+                android:textColor="#000" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table_row4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="13dp"
+            android:paddingEnd="13dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:weightSum="90">
+
+            <TextView
+                android:id="@+id/tgl_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="serif"
+                android:text="Facial"
+                android:textSize="18sp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/counter4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="serif"
+                android:text="1"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/efisiensi4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="serif"
+                android:text="50.000"
+                android:gravity="end"
+                android:textSize="18sp"
+                android:textColor="#000" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table_row5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="13dp"
+            android:paddingEnd="13dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:weightSum="90">
+
+            <TextView
+                android:id="@+id/tgl_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="serif"
+                android:text="Pedicure"
+                android:textSize="18sp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/Counter5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="serif"
+                android:text="1"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/efisiensi5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="serif"
+                android:text="50.000"
+                android:gravity="end"
+                android:textSize="18sp"
+                android:textColor="#000" />
+        </TableRow>
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/table_layout"
+        android:layout_marginTop="8dp"
+        app:srcCompat="@drawable/grey_bottom_line" />
+
+    <TableLayout
+        android:id="@+id/table_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line2">
+
+        <TableRow
+            android:id="@+id/table_row6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="13dp"
+            android:paddingEnd="13dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:weightSum="90">
+
+            <TextView
+                android:id="@+id/tgl_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="serif"
+                android:text="Biaya"
+                android:textSize="18sp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/counter3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="serif"
+                android:textAlignment="center"
+                android:text=":"
+                android:textSize="18sp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/efisiensi3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="serif"
+                android:text="200.000"
+                android:gravity="end"
+                android:textSize="18sp"
+                android:textColor="#000" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table_row7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="13dp"
+            android:paddingEnd="13dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:weightSum="90">
+
+            <TextView
+                android:id="@+id/tgl_6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="serif"
+                android:text="Diskon"
+                android:textSize="18sp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/counter5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="serif"
+                android:textAlignment="center"
+                android:text=":"
+                android:textSize="18sp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/efisiensi6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="serif"
+                android:text="20.000"
+                android:gravity="end"
+                android:textSize="18sp"
+                android:textColor="#000" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table_row8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="13dp"
+            android:paddingEnd="13dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:weightSum="90">
+
+            <TextView
+                android:id="@+id/tgl_7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="serif"
+                android:text="Total Biaya"
+                android:textSize="18sp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/counter6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="serif"
+                android:textAlignment="center"
+                android:text=":"
+                android:textSize="18sp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/efisiensi7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="serif"
+                android:text="180.000"
+                android:gravity="end"
+                android:textSize="18sp"
+                android:textColor="#000" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/table_layout2"
+        android:layout_marginTop="8dp"
+        app:srcCompat="@drawable/grey_bottom_line" />
+
+    <TableLayout
+        android:id="@+id/table_layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line3">
+
+        <TableRow
+            android:id="@+id/table_row10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="13dp"
+            android:paddingEnd="13dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:weightSum="90">
+
+            <TextView
+                android:id="@+id/tgl_10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="serif"
+                android:text="Bayar"
+                android:textSize="18sp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/counter10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="serif"
+                android:textAlignment="center"
+                android:text=":"
+                android:textSize="18sp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/efisiensi10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="serif"
+                android:text="200.000"
+                android:gravity="end"
+                android:textSize="18sp"
+                android:textColor="#000" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table_row11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="13dp"
+            android:paddingEnd="13dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:weightSum="90">
+
+            <TextView
+                android:id="@+id/tgl_11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="serif"
+                android:text="Kembali"
+                android:textSize="18sp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/counter11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="serif"
+                android:textAlignment="center"
+                android:text=":"
+                android:textSize="18sp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/efisiensi11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="serif"
+                android:text="20.000"
+                android:gravity="end"
+                android:textSize="18sp"
+                android:textColor="#000" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_above="@+id/btn_hubungkan_printer"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/btn_hubungkan_printer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_btn"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_login"
+        android:fontFamily="serif"
+        android:text="Hubungkan Bluetooth"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/layout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <!--<Button-->
+        <!--android:id="@+id/open"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="10dip"-->
+        <!--android:text="Bluetooth" />-->
+
+        <!--<Button-->
+        <!--android:id="@+id/send"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Print" />-->
+
+        <!--<Button-->
+        <!--android:id="@+id/close"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Close" />-->
+        <Button
+            android:id="@+id/btnBatal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_login"
+            android:fontFamily="serif"
+            android:text="Batal"
+            android:layout_margin="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btnPrint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_login"
+            android:layout_weight="1"
+            android:fontFamily="serif"
+            android:text="Print"
+            android:layout_margin="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</RelativeLayout>

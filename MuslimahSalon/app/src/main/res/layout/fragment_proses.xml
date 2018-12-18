@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewFragment.ProsesFragment">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layout_proses"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/table_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:id="@+id/table_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="13dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="13dp"
+                        android:paddingBottom="10dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:id="@+id/txt_waktu_pelanggan"
+                            app:autoSizeTextType="uniform"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="25"
+                            android:fontFamily="serif"
+                            android:singleLine="true"
+                            android:text="Waktu"
+                            android:textSize="20sp"
+                            android:textStyle="bold|italic" />
+
+                        <TextView
+                            android:id="@+id/txt_customer"
+                            app:autoSizeTextType="uniform"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="25"
+                            android:fontFamily="serif"
+                            android:singleLine="true"
+                            android:text="Customer"
+                            android:textSize="20sp"
+                            android:textStyle="bold|italic" />
+
+                        <TextView
+                            android:id="@+id/txt_stylish"
+                            app:autoSizeTextType="uniform"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="25"
+                            android:fontFamily="serif"
+                            android:singleLine="true"
+                            android:text="Stylish"
+                            android:textSize="20sp"
+                            android:textStyle="bold|italic" />
+                        <TextView
+                            android:id="@+id/txt_biaya"
+                            app:autoSizeTextType="uniform"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="25"
+                            android:fontFamily="serif"
+                            android:singleLine="true"
+                            android:text="Biaya"
+                            android:textSize="20sp"
+                            android:textStyle="bold|italic" />
+                    </TableRow>
+                </TableLayout>
+            </android.support.v7.widget.CardView>
+
+            <ScrollView
+                android:layout_below="@id/card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/layout_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        card_view:cardCornerRadius="5dp"
+                        card_view:cardElevation="5dp"
+                        card_view:cardUseCompatPadding="true">
+
+                        <TableLayout
+                            android:id="@+id/table_layout1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TableRow
+                                android:id="@+id/table_row1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="20dp"
+                                android:paddingRight="8dp"
+                                android:paddingBottom="20dp"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:id="@+id/waktu_pelanggan"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="25"
+                                    android:singleLine="true"
+                                    android:text="09.05"
+                                    android:fontFamily="serif"
+                                    android:textSize="20sp"
+                                    app:autoSizeTextType="uniform" />
+
+                                <TextView
+                                    android:id="@+id/nama_pelanggan"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="25"
+                                    android:singleLine="true"
+                                    android:text="Ratna"
+                                    android:fontFamily="serif"
+                                    android:textSize="20sp"
+                                    app:autoSizeTextType="uniform" />
+
+                                <TextView
+                                    android:id="@+id/nama_stylish"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="25"
+                                    android:singleLine="true"
+                                    android:text="Siti"
+                                    android:fontFamily="serif"
+                                    android:textSize="20sp"
+                                    app:autoSizeTextType="uniform" />
+
+                                <TextView
+                                    android:id="@+id/biaya"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="25"
+                                    android:singleLine="true"
+                                    android:text="130.000"
+                                    android:fontFamily="serif"
+                                    android:textSize="20sp"
+                                    app:autoSizeTextType="uniform" />
+                            </TableRow>
+                        </TableLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        card_view:cardCornerRadius="5dp"
+                        card_view:cardElevation="5dp"
+                        card_view:cardUseCompatPadding="true">
+
+                        <TableLayout
+                            android:id="@+id/table_layout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TableRow
+                                android:id="@+id/table_row2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="20dp"
+                                android:paddingRight="8dp"
+                                android:paddingBottom="20dp"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:id="@+id/waktu_pelangga1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="25"
+                                    android:singleLine="true"
+                                    android:text="09.35"
+                                    android:fontFamily="serif"
+                                    android:textSize="20sp"
+                                    app:autoSizeTextType="uniform" />
+
+                                <TextView
+                                    android:id="@+id/nama_pelanggan1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="25"
+                                    android:singleLine="true"
+                                    android:text="Nafiah"
+                                    android:fontFamily="serif"
+                                    android:textSize="20sp"
+                                    app:autoSizeTextType="uniform" />
+
+                                <TextView
+                                    android:id="@+id/nama_stylish1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="25"
+                                    android:singleLine="true"
+                                    android:text="Salma"
+                                    android:fontFamily="serif"
+                                    android:textSize="20sp"
+                                    app:autoSizeTextType="uniform" />
+
+                                <TextView
+                                    android:id="@+id/biaya1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="25"
+                                    android:singleLine="true"
+                                    android:text="150.000"
+                                    android:fontFamily="serif"
+                                    android:textSize="20sp"
+                                    app:autoSizeTextType="uniform" />
+                            </TableRow>
+                        </TableLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        card_view:cardCornerRadius="5dp"
+                        card_view:cardElevation="5dp"
+                        card_view:cardUseCompatPadding="true">
+
+                        <TableLayout
+                            android:id="@+id/table_layout3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TableRow
+                                android:id="@+id/table_row3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="20dp"
+                                android:paddingRight="8dp"
+                                android:paddingBottom="20dp"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:id="@+id/waktu_pelangga2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="25"
+                                    android:singleLine="true"
+                                    android:text="09.50"
+                                    android:fontFamily="serif"
+                                    android:textSize="20sp"
+                                    app:autoSizeTextType="uniform" />
+
+                                <TextView
+                                    android:id="@+id/nama_pelanggan2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="25"
+                                    android:singleLine="true"
+                                    android:text="Wida"
+                                    android:fontFamily="serif"
+                                    android:textSize="20sp"
+                                    app:autoSizeTextType="uniform" />
+
+                                <TextView
+                                    android:id="@+id/nama_stylish2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="25"
+                                    android:singleLine="true"
+                                    android:text="Maulida"
+                                    android:fontFamily="serif"
+                                    android:textSize="20sp"
+                                    app:autoSizeTextType="uniform" />
+
+                                <TextView
+                                    android:id="@+id/biaya2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="25"
+                                    android:singleLine="true"
+                                    android:text="130.000"
+                                    android:fontFamily="serif"
+                                    android:textSize="20sp"
+                                    app:autoSizeTextType="uniform" />
+                            </TableRow>
+                        </TableLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        card_view:cardCornerRadius="5dp"
+                        card_view:cardElevation="5dp"
+                        card_view:cardUseCompatPadding="true">
+
+                        <TableLayout
+                            android:id="@+id/table_layout4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TableRow
+                                android:id="@+id/table_row4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="20dp"
+                                android:paddingRight="8dp"
+                                android:paddingBottom="20dp"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:id="@+id/waktu_pelangga3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="25"
+                                    android:singleLine="true"
+                                    android:text="10.05"
+                                    android:fontFamily="serif"
+                                    android:textSize="20sp"
+                                    app:autoSizeTextType="uniform" />
+
+                                <TextView
+                                    android:id="@+id/nama_pelanggan3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="25"
+                                    android:singleLine="true"
+                                    android:text="Nina"
+                                    android:fontFamily="serif"
+                                    android:textSize="20sp"
+                                    app:autoSizeTextType="uniform" />
+
+                                <TextView
+                                    android:id="@+id/nama_stylish3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="25"
+                                    android:singleLine="true"
+                                    android:text="Siti"
+                                    android:fontFamily="serif"
+                                    android:textSize="20sp"
+                                    app:autoSizeTextType="uniform" />
+
+                                <TextView
+                                    android:id="@+id/biaya3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="25"
+                                    android:singleLine="true"
+                                    android:text="70.000"
+                                    android:fontFamily="serif"
+                                    android:textSize="20sp"
+                                    app:autoSizeTextType="uniform" />
+                            </TableRow>
+                        </TableLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        card_view:cardCornerRadius="5dp"
+                        card_view:cardElevation="5dp"
+                        card_view:cardUseCompatPadding="true">
+
+                        <TableLayout
+                            android:id="@+id/table_layout5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TableRow
+                                android:id="@+id/table_row5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="20dp"
+                                android:paddingRight="8dp"
+                                android:paddingBottom="20dp"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:id="@+id/waktu_pelangga4"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="25"
+                                    android:singleLine="true"
+                                    android:text="10.20"
+                                    android:fontFamily="serif"
+                                    android:textSize="20sp"
+                                    app:autoSizeTextType="uniform" />
+
+                                <TextView
+                                    android:id="@+id/nama_pelanggan4"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="25"
+                                    android:singleLine="true"
+                                    android:text="Linah"
+                                    android:fontFamily="serif"
+                                    android:textSize="20sp"
+                                    app:autoSizeTextType="uniform" />
+
+                                <TextView
+                                    android:id="@+id/nama_stylish4"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="25"
+                                    android:singleLine="true"
+                                    android:text="Salma"
+                                    android:fontFamily="serif"
+                                    android:textSize="20sp"
+                                    app:autoSizeTextType="uniform" />
+
+                                <TextView
+                                    android:id="@+id/biaya4"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="25"
+                                    android:singleLine="true"
+                                    android:text="140.000"
+                                    android:fontFamily="serif"
+                                    android:textSize="20sp"
+                                    app:autoSizeTextType="uniform" />
+                            </TableRow>
+                        </TableLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        card_view:cardCornerRadius="5dp"
+                        card_view:cardElevation="5dp"
+                        card_view:cardUseCompatPadding="true">
+
+                        <TableLayout
+                            android:id="@+id/table_layout6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TableRow
+                                android:id="@+id/table_row6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="20dp"
+                                android:paddingRight="8dp"
+                                android:paddingBottom="20dp"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:id="@+id/waktu_pelangga5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="25"
+                                    android:singleLine="true"
+                                    android:text="10.35"
+                                    android:fontFamily="serif"
+                                    android:textSize="20sp"
+                                    app:autoSizeTextType="uniform" />
+
+                                <TextView
+                                    android:id="@+id/nama_pelanggan5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="25"
+                                    android:singleLine="true"
+                                    android:text="Daisy"
+                                    android:fontFamily="serif"
+                                    android:textSize="20sp"
+                                    app:autoSizeTextType="uniform" />
+
+                                <TextView
+                                    android:id="@+id/nama_stylish5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="25"
+                                    android:singleLine="true"
+                                    android:text="Maulida"
+                                    android:fontFamily="serif"
+                                    android:textSize="20sp"
+                                    app:autoSizeTextType="uniform" />
+
+                                <TextView
+                                    android:id="@+id/biaya5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="25"
+                                    android:singleLine="true"
+                                    android:text="500.000"
+                                    android:fontFamily="serif"
+                                    android:textSize="20sp"
+                                    app:autoSizeTextType="uniform" />
+                            </TableRow>
+                        </TableLayout>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </ScrollView>
+
+            <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/recycler_View"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_below="@id/card0"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignParentLeft="true">-->
+
+            <!--</android.support.v7.widget.RecyclerView>-->
+
+        </RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+</FrameLayout>

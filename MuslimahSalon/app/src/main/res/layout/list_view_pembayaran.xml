@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card-view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card-view:cardCornerRadius="5dp"
+    card-view:cardElevation="5dp"
+    card-view:cardUseCompatPadding="true">
+
+    <TableLayout
+        android:id="@+id/table_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:id="@+id/table_row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingTop="20dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="20dp"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/waktu_pelanggan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="25"
+                android:singleLine="true"
+                android:text="09.05"
+                android:fontFamily="serif"
+                android:textSize="20sp"
+                app:autoSizeTextType="uniform" />
+
+            <TextView
+                android:id="@+id/nama_pelanggan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="25"
+                android:singleLine="true"
+                android:text="Ratna"
+                android:fontFamily="serif"
+                android:textSize="20sp"
+                app:autoSizeTextType="uniform" />
+
+            <TextView
+                android:id="@+id/nama_stylish"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="25"
+                android:singleLine="true"
+                android:text="Siti"
+                android:fontFamily="serif"
+                android:textSize="20sp"
+                app:autoSizeTextType="uniform" />
+
+            <TextView
+                android:id="@+id/biaya"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="25"
+                android:singleLine="true"
+                android:text="130.000"
+                android:fontFamily="serif"
+                android:textSize="20sp"
+                app:autoSizeTextType="uniform" />
+        </TableRow>
+    </TableLayout>
+
+</android.support.v7.widget.CardView>
